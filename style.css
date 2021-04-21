@@ -76,6 +76,28 @@ body::before {
   color: blue;
 }
 
+.warning {
+  color: red !important;
+  animation: warning 0.3s ease;
+  animation-iteration-count: 3;
+  animation-name: warning-res;
+}
+
+@keyframes warning-res {
+  0% {
+    transform: translateX(-8px);
+  }
+  25% {
+    transform: translateX(8px);
+  }
+  50% {
+    transform: translateX(-8px);
+  }
+  75% {
+    transform: translateX(8px);
+  }
+}
+
 .login__btn {
   margin-top: 25px;
 }

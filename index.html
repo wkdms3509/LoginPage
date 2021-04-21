@@ -12,15 +12,15 @@
         <h1>LOGO DESIGN</h1>
         <form action="">
             <div class="login__input">
-                <input type="text" name="id" id="id" autocomplete="off" required>
-                <label for="id">USER NAME</label>
+                <input type="text" name="id" class="id" autocomplete="off" required>
+                <label for="id" class="label">USER NAME</label>
             </div>
             <div class="login__input">
-                <input type="password" name="pw" id="pw" autocomplete="off" required>
-                <label for="pw">PASSWORD</label>
+                <input type="password" name="pw" class="pw" autocomplete="off" required>
+                <label for="pw" class="label">PASSWORD</label>
             </div>
             <div class="login__btn">
-                <button type="submit" id="btn">LOGIN</button>
+                <button type="submit" class="btn">LOGIN</button>
             </div>
         </form>
         <div class="caption">
@@ -28,6 +28,27 @@
         </div>
     </section>
 
+    <script>
+        const id = document.querySelector('.id');
+        const pw = document.querySelector('.pw');
+        const btn = document.querySelector('.btn');
+        const label = document.querySelector('.label');
+        const warn = document.querySelector('.warning');
 
+        function timeOut() {
+            label.classList.remove('warning');
+        }
+
+        btn.addEventListener('click', () => {
+            if(id.value == '') {
+                id.nextElementSibling.classList.add('warning');
+                setInterval(timeOut, 1500);
+            } else if(pw.value == '') {
+                pw.nextElementSibling.classList.add('warning');
+                setinterval(timeOut, 1500);
+            }
+        })
+
+    </script>
 </body>
 </html>
