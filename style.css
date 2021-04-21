@@ -64,7 +64,7 @@ body::before {
   position: absolute;
   left: 10px;
   top: 20px;
-  color: #444;
+  color: #999;
   font-size: 17px;
   transition: all 0.4s ease;
 }
@@ -77,7 +77,27 @@ body::before {
 }
 
 .login__btn {
+  margin-top: 25px;
+}
+
+.login__btn button {
+  width: 100%;
+  height: 50px;
+  font-size: 17px;
+  color: #fff;
+  background-color: dodgerblue;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .caption {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.caption a {
+  text-decoration: none;
+  color: #999;
+  font-size: 15px;
 }
