@@ -11,6 +11,73 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url("src/bg2.jpg") no-repeat center/100%;
+  background: url("src/bg2.jpg") no-repeat center;
+  background-size: cover;
   font-family: "Noto Sans KR", sans-serif;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.loginform {
+  position: relative;
+  z-index: 2;
+}
+
+.loginform h1 {
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.login__input {
+  width: 400px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.login__input:first-child {
+  margin-top: 0;
+}
+
+.login__input input {
+  width: 100%;
+  padding: 20px 10px 10px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 18px;
+  color: #000;
+}
+
+.login__input label {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  color: #444;
+  font-size: 17px;
+  transition: all 0.4s ease;
+}
+
+.login__input input:focus + label,
+.login__input input:valid + label {
+  top: -2px;
+  font-size: 13px;
+  color: blue;
+}
+
+.login__btn {
+}
+
+.caption {
 }
