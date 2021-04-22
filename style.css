@@ -56,7 +56,7 @@ body::before {
   outline: none;
   border: none;
   border-bottom: 1px solid #000;
-  font-size: 18px;
+  font-size: 17px;
   color: #000;
 }
 
@@ -113,6 +113,10 @@ body::before {
   cursor: pointer;
 }
 
+.login__btn button:hover {
+  opacity: 0.8;
+}
+
 .caption {
   margin-top: 20px;
   text-align: center;
@@ -122,4 +126,8 @@ body::before {
   text-decoration: none;
   color: #999;
   font-size: 15px;
+}
+
+.caption a:hover {
+  color: dodgerblue;
 }
