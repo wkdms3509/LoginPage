@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="loginBtn.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous">
+    
     <title>Login</title>
 </head>
 <body>
@@ -28,27 +30,5 @@
             <a href="">Forgot Password?</a>
         </div>
     </section>
-
-    <script>
-        const id = document.querySelector('.id');
-        const pw = document.querySelector('.pw');
-        const btn = document.querySelector('.btn');
-        const label = document.querySelector('.label');
-
-        function timeOut() {
-            label.classList.remove('warning');
-        }
-
-        btn.addEventListener('click', () => {
-            if(id.value == '') {
-                id.nextElementSibling.classList.add('warning');
-                setInterval(timeOut, 1500);
-            } else if(pw.value == '') {
-                pw.nextElementSibling.classList.add('warning');
-                setinterval(timeOut, 1500);
-            }
-        })
-
-    </script>
 </body>
 </html>
