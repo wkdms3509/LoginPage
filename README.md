@@ -18,7 +18,7 @@
 
 - 텍스트를 입력하지 않고 로그인 버튼을 누르면 js, css 애니메이션 속성에 의해 user name의 색상이 바뀌고 양옆으로 움직인다.
 
-![image](https://user-images.githubusercontent.com/63761624/115845207-955fe100-a45b-11eb-8d4a-1ab53a405f4a.png)
+![18](https://user-images.githubusercontent.com/63761624/115845645-043d3a00-a45c-11eb-8bc5-bd53846385f1.png)
 
 ### 사용 언어
 
